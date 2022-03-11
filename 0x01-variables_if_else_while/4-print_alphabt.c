@@ -1,23 +1,21 @@
 #include <stdio.h>
-
-/* This program return 
- * lowercase alphabatic
- * letter
+/**
+ * main - Prints the alphabet except the letters q and e.
+(*
+ * Return: 0 on success
  */
 int main(void)
 {
-    int a= 97;
-    int b= 122;
+	char c = 'a';
 
-    while (a <= b)
-    {
-        /* code */
-        if(a != 113 && a != 101)
-        {
-            putchar(a);
-        }
-    a++;
-    }
-     putchar('\n');
-     return (0);
-} 
+	while (c <= 'z')
+	{
+		if (c != 'q' && c != 'e')
+		{
+			putchar(c);
+		}
+		c++;
+	}
+	putchar('\n');
+	return (0);
+}
