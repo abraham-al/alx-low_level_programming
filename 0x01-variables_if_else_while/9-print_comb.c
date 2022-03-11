@@ -1,6 +1,6 @@
 #include <stdio.h>
 /**
- * main - prints all numbers of base 16.
+ * main - prints all possible combinations of single digit numbers.
 (*
  * Return: 0 on success
  */
@@ -11,18 +11,14 @@ int main(void)
 	while (i <= '9')
 	{
 		putchar(i);
-        if (i == '9')
-        {
-            /* code */
-            putchar(36);
-        }
-        else
-        {
-            putchar(44);
-            putchar(32);
-        }
-		i++;
+		if (i != '9')
+		{
+			putchar(',');
+			putchar(' ');
+		}
+		++i;
 	}
-    // putchar('\n');
-    return (0);
+	putchar('\n');
+	return (0);
+
 }
