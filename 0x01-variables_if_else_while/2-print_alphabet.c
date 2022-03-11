@@ -1,20 +1,18 @@
 #include <stdio.h>
-
-/* This program return 
- * lowercase alphabatic
- * letter
+/**
+ * main - prints the alphabet in lowercase.
+(*
+ * Return: 0 on success
  */
 int main(void)
 {
-    int a= 97;
-    int b= 122;
+	char c = 'a';
 
-    while (a <= 122)
-    {
-        /* code */
-        putchar(a);
-        a++;  
-    }
-    putchar('\n');
-    return (0);
-} 
+	while (c <= 'z')
+	{
+		putchar(c);
+		c++;
+	}
+	putchar('\n');
+	return (0);
+}
