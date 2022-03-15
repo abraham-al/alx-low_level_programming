@@ -8,8 +8,9 @@
 int main(void)
 {
 int a[8] = {95, 112, 117, 116, 99, 104, 97, 114};
-
-for (int i = 0; i < 8; i++)
+int i;
+  
+for (i = 0; i < 8; i++)
 {
 int b = a[i];
 
