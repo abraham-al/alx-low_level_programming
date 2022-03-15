@@ -1,18 +1,9 @@
-#include <stdio.h>
+#include "main.h"
 
-int _islower(int c);
 /**
- * main - check the code
+ * _islower - check the code
  *
  * Return: Always 0.
- */
-int main(void)
-{
-_islower(97);
-}
-/*
- * print_alphabet functuion
- * strats hear
  */
 int _islower(int c)
 {
