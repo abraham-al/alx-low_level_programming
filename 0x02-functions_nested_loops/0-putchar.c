@@ -14,8 +14,8 @@ for (i = 0; i < 8; i++)
 {
 int b = a[i];
 
-putchar(b);
+_putchar(b);
 }
-putchar('\n');
+_putchar('\n');
 return (0);
 }
