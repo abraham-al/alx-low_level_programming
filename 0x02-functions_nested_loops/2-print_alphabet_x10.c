@@ -1,8 +1,8 @@
 #include "main.h"
 
-/*
- * print_alphabet functuion
- * strats hear
+/**
+ * print_alphabet - prints the english alphabet from a-z.
+ * Return: Nothing.
  */
 void print_alphabet_x10(void)
 {
