@@ -1,19 +1,7 @@
-#include <stdio.h>
-
-void print_alphabet(void);
+#include "main.h"
 /**
- * main - check the code
- *
- * Return: Always 0.
- */
-int main(void)
-{
-print_alphabet();
-return (0);
-}
-/*
- * print_alphabet functuion
- * strats hear
+ * print_alphabet - prints the english alphabet from a-z.
+ * Return: Nothing.
  */
 void print_alphabet(void)
 {
