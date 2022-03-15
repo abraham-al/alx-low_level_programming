@@ -1,31 +1,21 @@
-#include <stdio.h>
-/*
- * print_alphabet functuion
- * strats hear
- */
-void print_alphabet_x10(void);
-/**
- * main - check the code
- *
- * Return: Always 0.
- */
-int main(void)
-{
-print_alphabet_x10();
-return (0);
-}
+#include "main.h"
+
 /*
  * print_alphabet functuion
  * strats hear
  */
 void print_alphabet_x10(void)
 {
-for (int j = 0; j < 10; j++)
+int j;
+
+for (j = 0; j < 10; j++)
 {
-for (int i = 97; i < 123; i++)
+int i;
+
+for (i = 97; i < 123; i++)
 {
-putchar(i);
+_putchar(i);
 }
-putchar('\n');
+_putchar('\n');
 }
 }
