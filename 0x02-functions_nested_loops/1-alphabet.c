@@ -1,4 +1,5 @@
 #include "main.h"
+
 /**
  * print_alphabet - Entry point
  * Description: a function that prints the alphabet,
@@ -9,7 +10,7 @@ void print_alphabet(void)
 {
 for (int i = 97; i < 123; i++)
 {
-putchar(i);
+_putchar(i);
 }
-putchar('\n');
+_putchar('\n');
 }
