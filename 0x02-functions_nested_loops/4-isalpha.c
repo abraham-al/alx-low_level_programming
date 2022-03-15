@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * _islower - check the code
+ * _isalpha - check the code
  *
  * Return: Always 0.
  * @c: character to test.
