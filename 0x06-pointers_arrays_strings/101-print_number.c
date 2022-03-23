@@ -1,5 +1,9 @@
 #include <stdio.h>
-
+#include "main.h"
+/**
+ * print_number - prints a number
+ * @n: Input number
+ */
 
 void print_number(int n)
 {
@@ -12,7 +16,7 @@ void print_number(int n)
 	else
 	{
 		res = n;
-		putchar('-');
+		_putchar('-');
 	}
 
 /*Initialize exponent variable*/
@@ -25,21 +29,7 @@ void print_number(int n)
 /*Main */
 	while (expo >= 1)
 	{
-		putchar(((res / expo) % 10) * -1 + '0');
+		_putchar(((res / expo) % 10) * -1 + '0');
 		expo /= 10;
 	}
-}
-int main()
-{
-	print_number(98);
-    putchar('\n');
-    print_number(402);
-    putchar('\n');
-    print_number(1024);
-    putchar('\n');
-    print_number(0);
-    putchar('\n');
-    print_number(-98);
-    putchar('\n');
-    return (0);
 }
