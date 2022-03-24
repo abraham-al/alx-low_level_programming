@@ -1,3 +1,4 @@
+	#include "main.h"
 	/**
 	 * infinite_add - add 2 integers.
 	 * @n1: integer
