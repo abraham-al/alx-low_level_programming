@@ -4,26 +4,19 @@
 
 char *_strpbrk(char *s, char *accept)
 {
-    int i, j, l, k = 0;
+	int i, j;
 
 	for (i = 0; s[i] != '\0'; i++)
 	{
 		/* code */
-		
-
 		for (j = 0; accept[j] != '\0'; j++)
 		{
 			/* code */
 			if (s[i] == accept[j])
-			{
-				/* code */
-				return(s+i);
-			}
-                     
+			return (s + i);
 		}
-		 
 	}
-	return (NULL);    
+	return (0);
 }
 /**
  * main - check the code
