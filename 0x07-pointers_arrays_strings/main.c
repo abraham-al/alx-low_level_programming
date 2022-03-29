@@ -1,23 +1,58 @@
 #include <stdio.h>
 #include "main.h"
 
-char *_strchr(char *s, char c)
+unsigned int _strspn(char *s, char *accept)
 {
-	int i;
+        int i,j,k=0;
 
-	i = 0;
-	while (s[i] != '\0')
-	{
-		
-		if (s[i] == c)
-		{
-			return (s + i);
-		}
-                i++;
-	}
-	return (0);
+        for (i = 0; s[i] != '\0'; i++)
+        {
+                /* code */
+                int l;
+                l=k;
+                for (j = 0; accept[j] != '\0'; j++)
+                {
+                        /* code */
+                        if (s[i] == accept[j])
+                        {
+                                /* code */
+                                k++;
+                                
+                        }
+                        
+                        
+                }
+                if (l == k)
+                {
+                        /* code */
+                        break;
+                }
+                
+        }
+        return(k);
 }
 
+// unsigned int _strspn(char *s, char *accept)
+// {
+// 	int i, j;
+// 	int c = 0;
+
+// 	for (i = 0; s[i] != '\0'; i++)
+// 	{
+// 		if (s[i] != 32)
+// 		{
+// 			for (j = 0; accept[j] != '\0'; j++)
+// 			{
+// 				if (s[i] == accept[j])
+// 					c++;
+// 			}
+// 		}
+// 		else
+// 			return (c);
+
+// 	}
+// 	return (c);
+// }
 /**
  * main - check the code
  *
@@ -25,14 +60,11 @@ char *_strchr(char *s, char c)
  */
 int main(void)
 {
- char *s = "hello";
-    char *f;
+    char *s = "Abreham, world";
+    char *f = "oleh";
+    unsigned int n;
 
-    f = _strchr(s, 'l');
-
-    if (f != NULL)
-    {
-        printf("%s\n", f);
-    }
+    n = _strspn(s, f);
+    printf("%u\n", n);
     return (0);
 }
