@@ -1,20 +1,19 @@
 #include <stdio.h>
 #include "main.h"
 
-
-char *_strpbrk(char *s, char *accept)
+char *_strstr(char *haystack, char *needle)
 {
 	int i, j;
 
-	for (i = 0; s[i] != '\0'; i++)
+	for (i = 0; haystack[i] != '\0'; i++)
 	{
-		/* code */
-		for (j = 0; accept[j] != '\0'; j++)
+		for (j = 0; needle[j] != '\0'; j++)
 		{
-			/* code */
-			if (s[i] == accept[j])
-			return (s + i);
+			if (haystack[i + j] != needle[j])
+				break;
 		}
+		if (needle[j] == '\0')
+			return (&haystack[i]);
 	}
 	return (0);
 }
@@ -25,11 +24,11 @@ char *_strpbrk(char *s, char *accept)
  */
 int main(void)
 {
-    char *s = "abog";
+    char *s = "hellwo, world";
     char *f = "world";
     char *t;
 
-    t = _strpbrk(s, f);
+    t = _strstr(s, f);
     printf("%s\n", t);
     return (0);
 }
