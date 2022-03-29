@@ -3,33 +3,29 @@
 
 unsigned int _strspn(char *s, char *accept)
 {
-        int i,j,k=0;
+	int i, j, l, k = 0;
 
-        for (i = 0; s[i] != '\0'; i++)
-        {
-                /* code */
-                int l;
-                l=k;
-                for (j = 0; accept[j] != '\0'; j++)
-                {
-                        /* code */
-                        if (s[i] == accept[j])
-                        {
-                                /* code */
-                                k++;
-                                
-                        }
-                        
-                        
-                }
-                if (l == k)
-                {
-                        /* code */
-                        break;
-                }
-                
-        }
-        return(k);
+	for (i = 0; s[i] != '\0'; i++)
+	{
+		/* code */
+		l = k;
+
+		for (j = 0; accept[j] != '\0'; j++)
+		{
+			/* code */
+			if (s[i] == accept[j])
+			{
+				/* code */
+				k++;
+			}
+		}
+		if (l == k)
+		{
+			/* code */
+			break;
+		}
+	}
+	return (k);
 }
 
 // unsigned int _strspn(char *s, char *accept)
@@ -60,7 +56,7 @@ unsigned int _strspn(char *s, char *accept)
  */
 int main(void)
 {
-    char *s = "Abreham, world";
+    char *s = "hello, world";
     char *f = "oleh";
     unsigned int n;
 
