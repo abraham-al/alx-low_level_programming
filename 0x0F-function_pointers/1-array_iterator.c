@@ -10,16 +10,14 @@
  */
 void array_iterator(int *array, size_t size, void (*action)(int))
 {
-	if (size == 0)
-	{
-		/* code */
-		return;
-	}
 	int i;
 
-	for (i = 0; i < size; i++)
+	if (array && action)
 	{
-		/* code */
-		(*action)(array[i]);
+		for (i = 0; i < size; i++)
+		{
+			/* code */
+			(*action)(array[i]);
+		}
 	}
 }
