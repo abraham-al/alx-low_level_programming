@@ -1,5 +1,4 @@
 #include "function_pointers.h"
-#include <stdlib.h>
 #include <stdio.h>
 /**
  * array_iterator - a function that
@@ -10,14 +9,14 @@
  */
 void array_iterator(int *array, size_t size, void (*action)(int))
 {
-	int i;
+	unsigned int i;
 
 	if (array && action)
 	{
 		for (i = 0; i < size; i++)
 		{
 			/* code */
-			(*action)(array[i]);
+			(action(*(array + i)));
 		}
 	}
 }

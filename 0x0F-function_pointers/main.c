@@ -9,19 +9,16 @@
  */
 void array_iterator(int *array, size_t size, void (*action)(int))
 {
-	if (size == 0)
+	unsigned int i;
+
+	if (array && action)
 	{
-		/* code */
-		return ;
+		for (i = 0; i < size; i++)
+		{
+			/* code */
+			(action(*(array + i)));
+		}
 	}
-    int i;
-    for ( i = 0; i < size; i++)
-    {
-        /* code */
-        (*action)(array[i]);
-    }
-    
-	
 }
 void print_elem(int elem)
 {
