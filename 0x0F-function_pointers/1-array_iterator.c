@@ -1,5 +1,5 @@
-#include "function_pointers.h"
 #include <stdio.h>
+#include "function_pointers.h"
 /**
  * array_iterator - a function that
  * @array: array to be printed
