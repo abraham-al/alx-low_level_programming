@@ -1,33 +1,28 @@
 #include "3-calc.h"
-#include <string.h>
-#include <stdlib.h>
-#include <stdio.h>
+
 /**
- *main - calculates the result of two integers based on the operand
- *
- *@argc:arg count
- *@argv:arguement vector
- *Return:int
+ * main - performs simple operations
+ * @argc: argument count
+ * @argv: argument vector
+ * Return: 1 for success
  */
+
 int main(int argc, char *argv[])
 {
-	register int num1, num2;
-
-	int (*funptr)(int, int);
+	register int a, b;
+	int (*fptr)(int, int);
 
 	if (argc != 4)
 	{
-		printf("Error\n");
-		exit(98);
+		printf("Error\n"), exit(98);
 	}
-	funptr = get_op_func(argv[2]);
-	if (!funptr)
+	fptr = get_op_func(argv[2]);
+	if (!fptr)
 	{
-		printf("Error\n");
-		exit(99);
+		printf("Error\n"), exit(99);
 	}
-	num1 = atoi(argv[1]);
-	num2 = atoi(argv[3]);
-	printf("%d\n", funptr(num1, num2));
-	return (0);
+	a = atoi(argv[1]);
+	b = atoi(argv[3]);
+	printf("%i\n", fptr(a, b));
+	return (1);
 }

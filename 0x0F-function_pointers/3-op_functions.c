@@ -1,49 +1,48 @@
 #include "3-calc.h"
-#include <stdio.h>
-#include <stdlib.h>
+
 /**
- *op_add - adds two int
- *
- *@a:int param
- *@b:int param
- *Return:int
+ * op_add - adds two integers
+ * @a: first integer
+ * @b: second integer
+ * Return: sum of two integers
  */
+
 int op_add(int a, int b)
 {
 	return (a + b);
 }
+
 /**
- *op_sub - returns diff of a and b
- *
- *@a:int param
- *@b:int param
- *
- *Return:difference
+ * op_sub - subtracts two integers
+ * @a: first integer
+ * @b: second integer
+ * Return: difference of two integers
  */
+
 int op_sub(int a, int b)
 {
 	return (a - b);
 }
+
 /**
- *op_mul - returns product of a and b
- *
- *@a:int
- *@b:int
- *
- *Return:product
+ * op_mul - multiply two integers
+ * @a: first integer
+ * @b: second integer
+ * Return: product of two integers
  */
+
 int op_mul(int a, int b)
 {
 	return (a * b);
 }
+
 /**
- *op_div - returns result of div of a and b
- *
- *@a:int
- *@b:int
- *
- *Return:div
+ * op_div - divides two integers
+ * @a: first integer
+ * @b: second integer
+ * Return: quotient of two integers
  */
+
 int op_div(int a, int b)
 {
 	if (!b)
@@ -53,14 +52,14 @@ int op_div(int a, int b)
 	}
 	return (a / b);
 }
+
 /**
- *op_mod - returns modulus of a and b
- *
- *@a:int
- *@b:int
- *
- *Return: modulus
+ * op_mod - calculates modulus two integers
+ * @a: first integer
+ * @b: second integer
+ * Return: modulus of two integers
  */
+
 int op_mod(int a, int b)
 {
 	if (!b)

@@ -1,10 +1,12 @@
-#include <string.h>
 #include "3-calc.h"
+
 /**
- *get_op_func - selects right function to perform tasks selected by user
- *@s:operator passed as arguement to program
- *Return:pointer to a function that corresponds to operator
+ * get_op_func - select correct function for exe
+ * @s: input params
+ *
+ * Return: 0 for code succes
  */
+
 int (*get_op_func(char *s))(int, int)
 {
 	op_t ops[] = {
