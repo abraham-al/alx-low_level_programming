@@ -1,5 +1,5 @@
-#ifndef CALC
-#define CALC
+#ifndef CALC_H
+#define CALC_H
 
 #include <stdio.h>
 #include <string.h>
@@ -64,4 +64,4 @@ typedef struct op
 	int (*f)(int a, int b);
 } op_t;
 
-#endif /*CALC*/
+#endif /*CALC_H*/
