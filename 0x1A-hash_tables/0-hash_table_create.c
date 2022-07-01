@@ -2,7 +2,7 @@
 /**
  * hash_table_create - create a hash table
  * @size: Table size
- * Return: success
+ * Return: succes
  */
 hash_table_t *hash_table_create(unsigned long int size)
 {
